@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Remote Docker App",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            "port": 4001,
+            "host": "localhost",
+            "showLog": true,
+            "trace": "trace",
+            "debugAdapter": "dlv-dap",
+            "substitutePath": [
+                {"from":"${workspaceFolder}", "to":"/go/src/github.com/rclone/rclone/"}
+            ]
+        }
+    ]
+}
